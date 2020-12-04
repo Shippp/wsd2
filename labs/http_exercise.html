@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab exercise html5</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Joseph Shipp" />
+    <meta name="description" content="HTML5 lab exercises" />
+    <link href="http_exercise.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Introduction to HTTP and Security</h1>
+    <ul>
+        <li>What is the Hypertext Transfer Protocol (HTTP)</li>
+        <li class="noDot">HTTP is a protocol which allows the fetching of resources, such as HTML documents.</li>
+        <li>Why is HTTP called a stateless protocol?</li>
+        <li class="noDot">HTTP is called a stateless protocol because there is no link between two requests being successively carried out on the same connection.</li>
+        <li>Describe the three phases of establishing a session using client-server protocols such as HTTP</li>
+
+        <li class="noDot">1. The client establishes a TCP connection (or the appropriate connection if the transport layer is not TCP).</li>
+        <li class="noDot">2. The client sends its request, and waits for the answer.</li>
+        <li class="noDot">3. The server processes the request, sending back its answer, providing a status code and appropriate data.</li>
+
+        <li>Describe the parameters on a get and post request.</li>
+
+        <li class="noDot">1. The path of the document, i.e. an absolute URL without the protocol or domain name.</li>
+        <li class="noDot">2. The HTTP protocol version.</li>
+
+        <li>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</li>
+        <li class="noDot">The HTTP status code 200 represents "OK" and 404 represents "Not Found".</li>
+        <li>What are HTTP cookies? Give an example.</li>
+        <li class="noDot">An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with later requests to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example.</li>
+        <li>Why are cookies a security issue?</li>
+        <li class="noDot">Cookies contain very sensitive information such as indicating authentication, and can be used against the user if found in the wrong hands.</li>
+        <li>Describe session hijacking and XSS</li>
+        <li class="noDot">Cross-site scripting (XSS) is a security exploit which allows an attacker to inject into a website malicious client-side code. This code is executed by the victims and lets the attackers bypass access controls and impersonate users. Session hijacking consists of gaining access to and misusing a user's authenticated session. This may happen by stealing a cookie for an existing session, or by fooling the user (or their browser) into setting a cookie with a predetermined session ID.</li>
+        <li>Describe Cross-site request forgery(CSRF)</li>
+        <li class="noDot">Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated. With a little help of social engineering (such as sending a link via email or chat).</li>
+        <li>What are Cross-site HTTP requests (CORS) and what requests use CORS?</li>
+        <li class="noDot">Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources. </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+li {
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.noDot {
+    list-style: none;
+    font-weight: 100;
+}
